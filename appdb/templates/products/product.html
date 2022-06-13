@@ -1,0 +1,106 @@
+{% extends "home/layout/layout.html" %}
+{% block content %}
+
+<main style="padding-bottom: 50px; background: #9ed6f4;">
+	<div class="row shop-card-title">
+		<div class="col-3">
+			<div class="category">
+				<div class="category-top">
+					<span><strong>TÌM KIẾM</strong></span>
+					<div class="search">
+						<input id="search-into" type="text" placeholder="Tìm kiếm...">
+						<img src="{{url_for('static', filename='images/search.png')}}" alt="">
+					</div>
+				</div>
+				<div class="category-list">
+					<span><strong>DANH MỤC SẢN PHẨM</strong></span>
+					<div class="menu-list">
+						<ul>
+							<li>PHÔI</li>
+							<li>CHAI</li>
+							<li>NẮP</li>
+						</ul>
+					</div>
+				</div>
+				<div class="category-news">
+					<span><strong>SẢN PHẨM HOT NHẤT</strong></span>
+					<div class="product-hot">
+						<ul>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-7">
+			<div class="shop-title">
+				<div class="row">
+				    <div class="col col-all-title">
+				       <span><Strong>TẤT CẢ CÁC SẢN PHẨM</Strong></span>
+				    </div>
+				    <div class="col-md-auto">
+				      <p>Kiểu sản phẩm</p>
+				    </div>
+				    <div class="col col-lg-2 ">
+				       <div class="dropdown show drw-show">
+					  		<a class="btn  dropdown-toggle click-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   		Danh Mục Sản Phẩm
+					  		</a>
+
+						    <div class="dropdown-menu drop-list" aria-labelledby="dropdownMenuLink">
+							    <a class="dropdown-item" href="#">Phôi</a>
+							    <a class="dropdown-item" href="#">Chai</a>
+							    <a class="dropdown-item" href="#">Nắp</a>
+						    </div>
+					</div>
+				    </div>
+				 </div>
+			
+				<div class="shop-container" >
+					<div class="row">
+						{% for a in range(6) %}
+						<div class="col">
+							<div class="card card-intr" style="width: 18rem; ">
+	 						 	<img class="card-img-top" src="https://gianguyenplastic.com/image/591c777363aa1f5e343d9cb4/original" alt="Card image cap">
+		  						<div class="card-body card-intr-submit">
+		    						<h5 class="card-title">NHÓM CHAI 3</h5>
+		    						<a href="#" class="btn btn-primary add-card active">
+
+		    						Chi tiết sản phẩm</a>
+		  						</div>
+							</div>
+						</div>
+						{% endfor %}
+
+						<div class="detail-product" style="display: none;">
+							{% for i in range(6) %}
+							<div class="col ">
+								<div class="card card-intr" style="width: 18rem;">
+									  <img class="card-img-top" src="https://gianguyenplastic.com/image/591c777363aa1f5e343d9cb4/original" alt="Card image cap">
+									  <div class="card-body">
+									  	<span><strong>CHI TIẾT SẢN PHẨM</strong></span>
+									    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									  </div>
+									  <div class="more-inf-detail">
+									  	<span>THÔNG SỐ KỸ THUẬT</span>
+									  	<div class="detail">
+									  		
+									  	</div>
+									  </div>
+									</div>
+							</div>
+							{% endfor%}
+						</div>
+						
+
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="col-2"></div>
+	</div>
+</main>
+
+{% endblock %}

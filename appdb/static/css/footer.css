@@ -1,0 +1,58 @@
+.container {
+	background: white;
+}
+	
+
+.footer-bottom {
+	background: url(../images/img-footer-edit.jpg);
+	position: relative;
+	height: 500px;
+	width: 100%;
+	padding-top: 0px;
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
+	background-position: center;
+	opacity: 1;
+	
+}
+.company {
+ padding-top: 70px;
+ margin-left: 40px;
+ margin-right: 40px;
+ height: 100%;
+ color: white;
+}
+.name-company {
+	/* background: yellowgreen; */
+	line-height: initial;
+    font-size: 12px;
+    font-weight: 800;
+	
+}
+.name-company .inf-company {
+	padding-top: 15px;
+}
+.contact-method {
+	padding-top: 15px;
+}
+.contact-method a {
+	padding-left: 10px;
+}
+.contact-method a:first-child {
+	padding-left: 0;
+}
+.contact-method a i {
+	font-size: 2.3rem;
+}
+.support {
+	background: yellowgreen;
+	line-height: normal;
+    font-size: 13px;
+    font-weight: 800;
+	position: relative;
+}
+.support .inf-support {
+	position: absolute;
+	right: 0;
+	width: 50%;
+}
