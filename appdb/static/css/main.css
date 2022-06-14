@@ -64,6 +64,12 @@
 	padding-left: 50px;
 	position: relative;
 }
+.input-inf {
+	padding-bottom: 10px;
+}
+.form-inf input {
+    padding-bottom: 10px;
+}
 
 .note input {
 	
@@ -74,4 +80,8 @@
 	position: absolute;
 	font-size: 16px;
 	top: 0;
+}
+
+.form-group {
+    padding-bottom: 5px ;
 }

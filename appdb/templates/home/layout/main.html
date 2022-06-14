@@ -1,80 +1,97 @@
-{% extends "home/layout/layout.html" %}
-{% import "macros/input_macro.html" as in %}
-{% block content %}
-
-<!-- <section>
-  <div class="products-hot" style="background: yellowgreen;">
-    <div class="container">
-     
-        <div class="new-hot">
-            <p><strong>TIN TỨC NỔI BẬC</strong></p>
-           {% for an in range(4) %}
-              <div class="row">
-                <h1>NTN</h1>
-              </div>
-           {% endfor %}
-        </div>
-      
-    </div>
-  </div>
-</section> -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-4 text-more">
-          <p >Đánh giá khách hàng</p>
-        </div>
-        <div class="col-8">
-          <div class="symbol-customer">          
-            <a href="#"><img src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-1.jpg" alt=""/></a>
-            <a href="#"><img src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-2.jpg" alt=""/></a>
-            <a href="#"><img src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-3.jpg" alt=""/></a>
-            <a href="#"><img src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-4.jpg" alt=""/></a>
-          </div>
-        </div>
-        </div>
-    </div>
-  </section>
-  <section class="form-inf">
-    <div class="container">
-      <div class="row">
-        <div class="col form-left">
-          <div class="introduce">
-            <p id="text">Những chiếc chai tinh Túy</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus perspiciatis eum, consequuntur dignissimos placeat nostrum totam. Itaque voluptatum ea laborum? Veniam nihil deleniti pariatur blanditiis. Laborum nihil est necessitatibus.</p>
-            
-          </div>
-          <div class="status" >
-              <a href="#"><img src="{{url_for('static', filename='images/place-localizer.png')}}" alt=""> 332013</a>
-              <a href="#"><img src="{{url_for('static', filename='images/heart.png')}}" alt=""> 71512988</a>
-              <a href="#"><img src="{{url_for('static', filename='images/smile.png')}}" alt=""> 6101990</a>
-          </div>
-        </div>
-        <div class="col form-right">
-          <div class="input-form insert-infcustomer">
-            <div class="row">
-                <div class="col-6 input-inf ">
-                 {{in.input(placeholder="Họ tên")}}
-                 {{in.input(placeholder="Địa chỉ")}}
-                </div>
-                <div class="col-6 input-inf ">
-                  {{in.input(placeholder="Số điện thoại")}}
-                  {{in.input(placeholder="Email")}}
-                </div>
-            </div>          
-          </div>
-          <div class="note">
-              <!-- {{in.input(placeholder="Nội dung...")}} -->
-              <textarea class="form-control" id="note" rows="6" cols="70" placeholder="Enter your text">
-                
-              </textarea>
-          </div>   
-          <button class="btn btn-primary" style="top: 5px;width: 100px;">Gửi</button>         
-          <label id="submit" style="width: 100px;height: 30px; background: yellowgreen; text-align: center; color: white;font-size: 20px; font-weight: bold;">GỬI</label>
+{% import "macro/input_macro.html" as in %} {% block content %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-4 text-more">
+        <p>Đánh giá khách hàng</p>
+      </div>
+      <div class="col-8">
+        <div class="symbol-customer">
+          <a href="#"
+            ><img
+              src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-1.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-2.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-3.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-4.jpg"
+              alt=""
+          /></a>
         </div>
       </div>
     </div>
-  </section>
-
-
+  </div>
+</section>
+<section class="form-inf">
+  <div class="container">
+    <div class="row">
+      <div class="col form-left">
+        <div class="introduce">
+          <p id="text">Những chiếc chai tinh Túy</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+            ducimus perspiciatis eum, consequuntur dignissimos placeat nostrum
+            totam. Itaque voluptatum ea laborum? Veniam nihil deleniti pariatur
+            blanditiis. Laborum nihil est necessitatibus.
+          </p>
+        </div>
+        <div class="status">
+          <a href="#"
+            ><img
+              src="{{url_for('static', filename='images/place-localizer.png')}}"
+              alt=""
+            />
+            332013</a
+          >
+          <a href="#"
+            ><img
+              src="{{url_for('static', filename='images/heart.png')}}"
+              alt=""
+            />
+            71512988</a
+          >
+          <a href="#"
+            ><img
+              src="{{url_for('static', filename='images/smile.png')}}"
+              alt=""
+            />
+            6101990</a
+          >
+        </div>
+      </div>
+      <div class="col form-right">
+        <div class="input-form insert-infcustomer">
+          <div class="row">
+            <div class="col-6 input-inf">
+              {{in.input(placeholder="Họ tên")}} 
+              {{in.input(placeholder="Địa chỉ")}}
+            </div>
+            <div class="col-6 input-inf">
+              {{in.input(placeholder="Số điện thoại")}}
+              {{in.input(placeholder="Email")}}
+            </div>
+          </div>
+        </div>
+        <div class="note">
+          <!-- {{in.input(placeholder="Nội dung...")}} -->
+          <textarea class="form-control" id="note"rows="6"cols="70" placeholder="Nhập nội dung..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="top: 5px; width: 100px">
+          Gửi
+        </button>
+        <!-- <label id="submit" style="width: 100px;height: 30px; background: yellowgreen; text-align: center; color: white;font-size: 20px; font-weight: bold;">GỬI</label> -->
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}

@@ -1,15 +1,11 @@
 from appdb import app
-from flask import render_template,url_for
+from flask import render_template
 
 
+@app.route("/")
+def home():
+    return render_template('home/layout/layout.html')
 
-@app.route('/')
-def index():
-	return render_template('home/layout/layout.html')
-
-@app.route('/main')
-def main():
-	return render_template('home/layout/main.html')
 
 @app.route('/product')
 def product():
