@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Introduce </title>
-	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+	<!-- <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}">
 
 </head>
 <body>
@@ -50,7 +52,7 @@
 			<div class="name p-2"><h2>Tổng Giám Đốc</h2></div>
 			<div class="row p-2">
 		    	<div class="col-4 text-r"><img class="image" src="img-intro/4.jpeg" alt=""></div>
-		    	<div class="col-6 mg-auto f-25">
+		    	<div class="col-6 mg-auto f-25 shadow" style="">
 		    		<p>Full Name</p><br>
 		    	<p>Infomation of Director</p> 
 		    	</div>
@@ -58,6 +60,6 @@
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 </body>
 </html>

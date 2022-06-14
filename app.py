@@ -7,7 +7,17 @@ def home():
 
 @app.route("/news")
 def news():
-    return render_template('home/news/index.html')
+    return render_template('home/introduce/news.html')
+
+@app.route("/introduce")
+def introduce():
+    return render_template('home/introduce/introduce.html')
+
+@app.route("/contact")
+def contact():
+    return render_template('home/introduce/contact.html')
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
