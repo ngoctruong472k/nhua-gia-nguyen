@@ -10,4 +10,4 @@ from appdb import app
 #     return render_template('home/news/index.html')
 
 if __name__ == "__main__":
-    app.run(debug=True,port=8080)
+    app.run(debug=True, port=8080)
