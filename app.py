@@ -7,15 +7,15 @@ def home():
 
 @app.route("/news")
 def news():
-    return render_template('home/introduce/news.html')
+    return render_template('home/news/news.html')
 
 @app.route("/introduce")
 def introduce():
-    return render_template('home/introduce/introduce.html')
+    return render_template('home/news/introduce.html')
 
 @app.route("/contact")
 def contact():
-    return render_template('home/introduce/contact.html')
+    return render_template('home/news/contact.html')
 
 
 
