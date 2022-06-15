@@ -24,39 +24,34 @@
 .text-r{
 	text-align: right;
 }
+.mgb{
+	margin-bottom: 10px;
+}
 .line-bottom{
 	width:  100%;
 	border-bottom : 1px solid lightblue;
+	margin: 20px 0;
 }
 .image{
 	max-width: 100%;
 	width: 200px;
 	height: 250px;
 }
-.f-25{
-	font-size :  25px;
+.mg-s{
+	margin: 10px;
 }
 
-li > a {
-	text-decoration: none;
-}
-/* div > form > p {
-	margin-top: 1rem;
-}
-div > p {
-	margin-top: 1rem;
-} */
-p {
-	margin: 0;
-}
-ol > li {
-	text-decoration: none;
+.ul-info{
 	list-style: none;
-	padding: 10px;
+	text-decoration: none;
+	align-items: center;
 }
-.textandsize{
+.non-text-dec{
+	text-decoration: none;
+}
+.sizetext{
 	font-size: 18px;
-	padding: 20px 40px;
+	padding: 20px 45px;
 }
 .form-input{
 	padding: 7px 12px;
@@ -67,16 +62,15 @@ ol > li {
 	height: 34px;
 	width:  100%;
 }
-.btn{
-    padding: 3px 22px;
-    margin-bottom: 0;
+.form-info-p{
+	margin: 5px 0;
+}
+.button{
+    padding: 3px 25px;
     font-size: 20px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-.notice{
-	color: lightgrey;
 }
 .box{
 	margin: 1px solid #333 ;
