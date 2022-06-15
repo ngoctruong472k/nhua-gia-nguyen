@@ -84,8 +84,8 @@ ol > li {
 }
 .bor{
 	overflow: hidden;
-	width: 253px;
-	height: 150px;
+	width: 100%;
+	height: 200px;
 }
 .card{
 	box-shadow: 6px 8px 10px #0000001c;
