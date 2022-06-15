@@ -1,5 +1,298 @@
-{% extends 'home/layout/layout.html' %} {% block title%} Home {% endblock %} {%
-block body_class %}home{% endblock %} {% block content %}
-<!-- <section class="content">
-</section> -->
+{% extends 'home/layout/layout.html' %} 
+{% block title%} Home {% endblock %} 
+{% block body_class %}home{% endblock %} 
+{% import "macros/input_macro.html" as in %} 
+{% block content %} 
+<section>
+  <div class="products">
+    <div class="container">
+      <div class="row">
+        <div class="product-info col-3">
+          <div class="product-genne">
+            <div class="product-company">
+              <h1>CÔNG TY TNHH</h1>
+              <b
+                >NHỰA <br />
+                GIA NGUYỄN</b
+              >
+              <div class="btm mt-2"></div>
+            </div>
+            <div class="product-introduce">
+              <p>
+                Hơn nhiều năm hình thành và phát triển, Nhựa Gia Nguyễn luôn
+                vững vàng với mục tiêu mang lại cho khách hàng những sản nhựa
+                sản xuất trên công nghệ mới nhất.
+              </p>
+              <a href="">Tất cả dịch vụ</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-info col-3">
+          <div class="product-img">
+            <img src="../static/images/vd1.jpg" alt="" />
+            <div class="btm-text">
+              <h1>Tầm nhìn & Sứ mệnh</h1>
+            </div>
+          </div>
+          <div class="product-information">
+            <p>
+              Hơn nhiều năm hình thành và phát triển, Nhựa Gia Nguyễn luôn vững
+              vàng với mục tiêu mang lại cho khách hàng những sản nhựa sản xuất
+              trên công nghệ mới nhất.
+            </p>
+          </div>
+        </div>
+        <div class="product-info col-3">
+          <div class="product-img">
+            <img src="../static/images/vd1.jpg" alt="" />
+            <div class="btm-text">
+              <h1>Triết lý kinh doanh</h1>
+            </div>
+          </div>
+          <div class="product-information">
+            <p>
+              Hơn nhiều năm hình thành và phát triển, Nhựa Gia Nguyễn luôn vững
+              vàng với mục tiêu mang lại cho khách hàng những sản nhựa sản xuất
+              trên công nghệ mới nhất.
+            </p>
+          </div>
+        </div>
+        <div class="product-info col-3">
+          <div class="product-img">
+            <img src="../static/images/vd1.jpg" alt="" />
+            <div class="btm-text">
+              <h1>Giá trị cốt lõi</h1>
+            </div>
+          </div>
+          <div class="product-information">
+            <p>
+              Hơn nhiều năm hình thành và phát triển, Nhựa Gia Nguyễn luôn vững
+              vàng với mục tiêu mang lại cho khách hàng những sản nhựa sản xuất
+              trên công nghệ mới nhất.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="port"></div>
+    <div class="content-menu">
+      <button class="content-btn active" data-title="#tatca">Tất cả</button>
+      <button class="content-btn text-muted" data-title="#phoi">Phôi</button>
+      <button class="content-btn text-muted" data-title="#chai">Chai</button>
+      <button class="content-btn text-muted" data-title="#nap">Nắp</button>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="content-menu-list active" id="tatca">
+          {% for a in range(8)%}
+          <div class="content-items col-3">
+            <div class="image-play">
+              <img src="../static/images/vd.jpg" alt="" />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="content-menu-list" id="phoi">
+          {% for a in range(3)%}
+          <div class="content-items col-3">
+            <div class="image-play">
+              <img src="../static/images/vd.jpg" alt="" />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="content-menu-list" id="chai">
+          {% for a in range(7) %}
+          <div class="content-items col-3">
+            <div class="image-play">
+              <img
+                src="{{url_for('static', filename='images/vd.jpg')}}"
+                alt=""
+              />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="content-menu-list" id="nap">
+          {% for a in range(7)%}
+          <div class="content-items col-3">
+            <div class="image-play">
+              <img src="../static/images/vd.jpg" alt="" />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tidings">
+    <div class="container">
+      <div class="row">
+        <div class="tidings-news">
+          <h1>TIN TỨC NỖI BẬT</h1>
+        </div>
+        <div class="tidings-info col-3">
+          <div class="tidings-img">
+            <img src="../static/images/vd1.jpg" alt="" />
+            <div class="tidings-information">
+              <a href="">Ánh sáng thiết kế nội thất</a>
+              <p class="mt-2">08/04//2022</p>
+              <p>
+                Chúng tôi trao đến quý khách hàng chất xám là những câu chuyện
+                được truyền tải.
+              </p>
+            </div>
+            <div class="tiding-color"></div>
+          </div>
+        </div>
+        <div class="tidings-info col-3">
+          <div class="tidings-img">
+            <img src="../static/images/vd1.jpg" alt="" />
+            <div class="tidings-information">
+              <a href="">Ánh sáng thiết kế nội thất</a>
+              <p class="mt-2">08/04//2022</p>
+              <p>
+                Chúng tôi trao đến quý khách hàng chất xám là những câu chuyện
+                được truyền tải.
+              </p>
+            </div>
+            <div class="tiding-color"></div>
+          </div>
+        </div>
+        <div class="tidings-info col-3">
+          <div class="tidings-img">
+            <img src="../static/images/vd1.jpg" alt="" />
+            <div class="tidings-information">
+              <a href="">Ánh sáng thiết kế nội thất</a>
+              <p class="mt-2">08/04//2022</p>
+              <p>
+                Chúng tôi trao đến quý khách hàng chất xám là những câu chuyện
+                được truyền tải.
+              </p>
+            </div>
+            <div class="tiding-color"></div>
+          </div>
+        </div>
+        <div class="tidings-info col-3">
+          <div class="tidings-img">
+            <img src="../static/images/vd1.jpg" alt="" />
+            <div class="tidings-information">
+              <a href="">Ánh sáng thiết kế nội thất</a>
+              <p class="mt-2">08/04//2022</p>
+              <p>
+                Chúng tôi trao đến quý khách hàng chất xám là những câu chuyện
+                được truyền tải.
+              </p>
+            </div>
+            <div class="tiding-color"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-4 text-more">
+        <p>Đánh giá khách hàng</p>
+      </div>
+      <div class="col-8">
+        <div class="symbol-customer">
+          <a href="#"
+            ><img
+              src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-1.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-2.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-3.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://hnk.muatheme.com/wp-content/uploads/2019/04/partner-4.jpg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="form-inf">
+  <div class="container">
+    <div class="row">
+      <div class="col form-left">
+        <div class="introduce">
+          <p id="text">Những chiếc chai tinh Túy</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+            ducimus perspiciatis eum, consequuntur dignissimos placeat nostrum
+            totam. Itaque voluptatum ea laborum? Veniam nihil deleniti pariatur
+            blanditiis. Laborum nihil est necessitatibus.
+          </p>
+        </div>
+        <div class="status">
+          <a href="#"
+            ><img
+              src="{{url_for('static', filename='images/place-localizer.png')}}"
+              alt=""
+            />
+            332013</a
+          >
+          <a href="#"
+            ><img
+              src="{{url_for('static', filename='images/heart.png')}}"
+              alt=""
+            />
+            71512988</a
+          >
+          <a href="#"
+            ><img
+              src="{{url_for('static', filename='images/smile.png')}}"
+              alt=""
+            />
+            6101990</a
+          >
+        </div>
+      </div>
+      <div class="col form-right">
+        <div class="input-form insert-infcustomer">
+          <div class="row">
+            <div class="col-6 input-inf">
+              {{in.input(placeholder="Họ tên")}} 
+              {{in.input(placeholder="Địa chỉ")}}
+            </div>
+            <div class="col-6 input-inf">
+              {{in.input(placeholder="Số điện thoại")}}
+              {{in.input(placeholder="Email")}}
+            </div>
+          </div>
+        </div>
+        <div class="note">
+          <!-- {{in.input(placeholder="Nội dung...")}} -->
+          <textarea
+            class="form-control"
+            id="note"
+            rows="6"
+            cols="70"
+            placeholder="Nhập nội dung..."
+          ></textarea>
+        </div>
+        <button class="btn btn-primary" style="margin-top: 5px; width: 100px">
+          Gửi
+        </button>
+        <!-- <label id="submit" style="width: 100px;height: 30px; background: yellowgreen; text-align: center; color: white;font-size: 20px; font-weight: bold;">GỬI</label> -->
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
