@@ -11,7 +11,7 @@ a {
 }
 #navbar_top{
     height: 40px;
-    background-color: #00BAC9 !important;
+    background-color: #3498db !important;
 }
 
 .menu-top {
@@ -35,7 +35,7 @@ a {
     font-size: 35px;
     margin-top: 5px;
     padding-right: 15px;
-    color: #00BAC9;
+    color: #3498db;
 }
 .menu-info p {
     font-size: 16px;
@@ -54,7 +54,7 @@ a {
 
 .menu-btn a {
     color: #fff;
-    background-color: #00BAC9;
+    background-color: #3498db;
     border-radius: 3px;
     padding: 13px 38px;
 } 
@@ -64,9 +64,9 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     position: relative;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .banner-menu {
@@ -87,7 +87,7 @@ a {
 .banner-house-icon i {
     font-size: 25px;
     margin-right: 40px;
-    color: #00BAC9;
+    color: #3498db;
 }
 .banner-house-text ul {
     margin: 5px;
@@ -101,7 +101,7 @@ a {
     font-weight: 300;
 }
 .banner-house-text ul li a:hover {
-    color: #00BAC9;
+    color: #3498db;
 }
 .banner-icon {
     padding: 20px 0;
@@ -119,7 +119,7 @@ a {
 .banner-shop i {
     font-size: 20px;
     margin: 5px 0;
-    color: #00BAC9;
+    color: #3498db;
 }
 .banner-search {
     border-left: 1px solid#ccc;
@@ -128,16 +128,16 @@ a {
 .banner-search i {
     font-size: 20px;
     margin: 5px 0;
-    color: #00BAC9;
+    color: #3498db;
 }
 .banner-content {
     position: absolute;
     top: 30%;
-    left: 6%;
+    left: 9%;
 }
 .banner-content h2 {
     font-size: 30px;
-    color: #00BAC9;
+    color: #3498db;
     font-weight: 500;
 }
 .banner-content h3 {
@@ -154,24 +154,24 @@ a {
     margin-top: 40px;
 }
 .banner-content-btn a:nth-child(1){
-    color: #fff;
-    background-color: #00BAC9;
+    color: #ffffff;
+    background-color: #3498db;
     font-size: 16px;
     padding: 15px 40px;
     border-radius: 2px;
 }
 .banner-content-btn a:nth-child(2){
     margin: 10px 50px;
-    padding: 8px 0;
+    padding: 5px 0;
     font-size: 18px;
-    color: #fff;
-    border-bottom: 3px solid #00BAC9;
-    font-weight: 300;
+    color: #ffffff;
+    border-bottom: 3px solid #3498db;
+    font-weight: 400;
 }
 /* -------- product --------- */
 .products {
     padding: 60px 0;
-    background-color: #ccc;
+    background-color: #d3deefd4;
 }
 .product-genne {
     background-color: #fff;
@@ -187,9 +187,9 @@ a {
     position: relative;
 }
 .product-img img {
-    width: 249px;
+    width: 100%;
+    height: 21.5vh;
     opacity: 1;
-
 }
 .product-company h1 {
     font-size: 25px;
@@ -206,18 +206,19 @@ a {
     font-weight: 300;
 }
 .product-introduce a {
-    background-color: #00BAC9;
+    background-color: #3498db;
     color: #fff;
-    padding: 14px 30px;
+    padding: 14px 40px;
     border-radius: 2px;
     font-weight: 300;
 }
 .product-information {
-    padding: 25px 20px 72px 20px;
+    padding: 25px 20px 41px 20px;
     background-color: #fff;
 }
+
 .product-information p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color: #333333;
 }
@@ -226,7 +227,7 @@ a {
 }
 
 .btm {
-    border: 1px solid #00BAC9;
+    border: 1px solid #3498db;
     width: 20%;
     position: relative;
 }
@@ -240,13 +241,13 @@ a {
 }
 .btm-text {
     position: absolute;
-    top: 70%;
-    left: 10%;
+    top: 75%;
+    left: 6%;
 }
 .btm-text h1 {
     font-size: 20px;
     font-weight: bold;
-    color: #ffffff;
+    color: #fff;
     text-shadow:0px 3px 10px #000;
 }
 
@@ -260,63 +261,64 @@ a {
 }
 .image-play img {
    width: 100%;
-   height: 100%;
+   height: 20vh;
 }
 /* ------- ditings ------- */
 .tidings {
-    background-color: #ccc;
+    background-color: #d3deefd4;
 }
 .tidings-news {
     text-align: center;
-    padding: 30px 0;
+    padding-top: 30px;
 }
 .tidings-news h1 {
-    font-size: 28px;
-    color: #00BAC9;
-    font-weight: 400;
+    font-size: 30px;
+    color: #3498db;
+    font-weight: bold ;
 }
-.tidings-info.col-3 {
-    width: 24% !important;
+.tiding-newspaper {
+    padding: 40px 0 50px 0;
 }
-.tidings-info {
-    margin: 5px;
+.tiding-info {
+    margin: 15px;
 }
-.tidings-img {
-    position: relative;
+.tiding-info.col-4 {
+    width: 30.6% !important;
 }
-.tidings-img img{
-    width: 249px;
-    opacity: 1; 
-} 
-.tidings-information {
-    position: absolute;
-    top: 42%;
-    left: 8%;
-    right: 8%;
+.tiding-img img {
+    width: 100%;
+    height: 21.5vh;
+    opacity: 1;
+}
+.tiding-information {
     background-color: #fff;
-    padding: 15px 10px 0 10px;
+    padding: 20px;
 }
-.tidings-information a {
+.tiding-information h3 {
     font-size: 18px;
-    color: #333333;
-    font-weight: 400;
+    color: #000000;
+    font-weight: 500;
 }
-.tidings-information p {
+.tiding-information p {
     font-size: 14px;
-    color: #757575;
-    font-weight: 300;
-    /* padding-top: 5px; */
+    margin-top: 10px;
 }
-.tiding-color {
-    background-color: #fff;
-    padding: 80px;
+.tiding-information a {
+    font-size: 16px;
+    color: #3498db;
 }
+.tiding-information i {
+    font-size: 10px;
+    color: #3498db;
+
+}
+/* -------content -------*/
 .content {
     background-color: #fff;
     position: relative;
 }
 .content-menu {
-    padding: 0 75px;
+    padding: 0 110px;
     border-bottom: 2px solid #ccc;
 }
 .content-btn {
@@ -325,17 +327,18 @@ a {
     font-size: 16px;
     cursor: pointer;
     margin: 0 20px;
+    color: #295eab;
     padding-bottom: 22px;
-    font-weight: 300;
+    font-weight: 500;
 }
 .content-btn.active {
-    border-bottom: 2px solid #00BAC9;
+    border-bottom: 2px solid #3498db;
     border-radius: 2px;
    
 }
 
 .content-btn:hover {
-    border-bottom: 2px solid #00BAC9;
+    border-bottom: 2px solid #3498db;
     border-radius: 2px;
 
 }
@@ -394,7 +397,6 @@ a {
 	}
 }
   
-  
 .port {
     position: absolute;
     border-right: 15px solid transparent;
@@ -405,4 +407,41 @@ a {
     z-index: 1;
     width: 100%;
     right: 890px;
+}
+/* ------ review --------*/
+.review-info.col-3 {
+    width: 24% !important;
+}
+.review-info {
+    margin: 5px;
+}
+.review-img {
+    position: relative;
+}
+.review-img img{
+    width: 249px;
+    opacity: 1; 
+} 
+.review-information {
+    position: absolute;
+    top: 42%;
+    left: 6%;
+    right: 13%;
+    background-color: #fff;
+    padding: 15px 10px 0 10px;
+}
+.review-information a {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 400;
+}
+.review-information p {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 300;
+    /* padding-top: 5px; */
+}
+.review-color {
+    background-color: #fff;
+    padding: 80px;
 }

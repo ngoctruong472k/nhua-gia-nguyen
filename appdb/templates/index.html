@@ -29,9 +29,9 @@
         </div>
         <div class="product-info col-3">
           <div class="product-img">
-            <img src="../static/images/vd1.jpg" alt="" />
+            <img src="../static/images/sk.jpg" alt="" />
             <div class="btm-text">
-              <h1>Tầm nhìn & Sứ mệnh</h1>
+              <h1>Sức khỏe</h1>
             </div>
           </div>
           <div class="product-information">
@@ -44,9 +44,9 @@
         </div>
         <div class="product-info col-3">
           <div class="product-img">
-            <img src="../static/images/vd1.jpg" alt="" />
+            <img src="../static/images/chai3-product.jpg" alt="" />
             <div class="btm-text">
-              <h1>Triết lý kinh doanh</h1>
+              <h1>Sản phẩm nhựa</h1>
             </div>
           </div>
           <div class="product-information">
@@ -59,9 +59,9 @@
         </div>
         <div class="product-info col-3">
           <div class="product-img">
-            <img src="../static/images/vd1.jpg" alt="" />
+            <img src="../static/images/chai6-product.jpeg" alt="" />
             <div class="btm-text">
-              <h1>Giá trị cốt lõi</h1>
+              <h1>Thiết kế phôi</h1>
             </div>
           </div>
           <div class="product-information">
@@ -79,9 +79,9 @@
     <div class="port"></div>
     <div class="content-menu">
       <button class="content-btn active" data-title="#tatca">Tất cả</button>
-      <button class="content-btn text-muted" data-title="#phoi">Phôi</button>
-      <button class="content-btn text-muted" data-title="#chai">Chai</button>
-      <button class="content-btn text-muted" data-title="#nap">Nắp</button>
+      <button class="content-btn" data-title="#phoi">Phôi</button>
+      <button class="content-btn" data-title="#chai">Chai</button>
+      <button class="content-btn" data-title="#nap">Nắp</button>
     </div>
     <div class="container">
       <div class="row">
@@ -89,7 +89,7 @@
           {% for a in range(8)%}
           <div class="content-items col-3">
             <div class="image-play">
-              <img src="../static/images/vd.jpg" alt="" />
+              <img src="../static/images/trasua.jpeg" alt="" />
             </div>
           </div>
           {% endfor %}
@@ -98,17 +98,17 @@
           {% for a in range(3)%}
           <div class="content-items col-3">
             <div class="image-play">
-              <img src="../static/images/vd.jpg" alt="" />
+              <img src="../static/images/phoi1.jpeg" alt="" />
             </div>
           </div>
           {% endfor %}
         </div>
         <div class="content-menu-list" id="chai">
-          {% for a in range(7) %}
+          {% for a in range(8) %}
           <div class="content-items col-3">
             <div class="image-play">
               <img
-                src="{{url_for('static', filename='images/vd.jpg')}}"
+                src="{{url_for('static', filename='images/chai2-product.jpeg')}}"
                 alt=""
               />
             </div>
@@ -119,7 +119,7 @@
           {% for a in range(7)%}
           <div class="content-items col-3">
             <div class="image-play">
-              <img src="../static/images/vd.jpg" alt="" />
+              <img src="../static/images/nap1.jpeg" alt="" />
             </div>
           </div>
           {% endfor %}
@@ -132,64 +132,47 @@
     <div class="container">
       <div class="row">
         <div class="tidings-news">
-          <h1>TIN TỨC NỖI BẬT</h1>
+          <h1>Tin tức & Sự kiện</h1>
         </div>
-        <div class="tidings-info col-3">
-          <div class="tidings-img">
-            <img src="../static/images/vd1.jpg" alt="" />
-            <div class="tidings-information">
-              <a href="">Ánh sáng thiết kế nội thất</a>
-              <p class="mt-2">08/04//2022</p>
-              <p>
-                Chúng tôi trao đến quý khách hàng chất xám là những câu chuyện
-                được truyền tải.
-              </p>
+        <div class="tiding-newspaper d-flex">
+          <div class="tiding-info col-4">
+            <div class="tiding-img">
+              <img src="../static/images/tp.jpg" alt="" />
             </div>
-            <div class="tiding-color"></div>
+            <div class="tiding-information">
+              <h3>Nhựa đựng thực phẩm loại nào an toàn, loại nào nguy hiểm</h3>
+              <p>
+                7 loại nhựa đang được lưu hành trên thị trường có thành phần và những đặc tính hóa học khác nhau. 
+              </p>
+              <a href="">Đọc tiếp </a><i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+          <div class="tiding-info col-4">
+            <div class="tiding-img">
+              <img src="../static/images/tp.jpg" alt="" />
+            </div>
+            <div class="tiding-information">
+              <h3>Nhựa đựng thực phẩm loại nào an toàn, loại nào nguy hiểm</h3>
+              <p>
+                7 loại nhựa đang được lưu hành trên thị trường có thành phần và những đặc tính hóa học khác nhau. 
+              </p>
+              <a href="">Đọc tiếp </a><i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+          <div class="tiding-info col-4">
+            <div class="tiding-img">
+              <img src="../static/images/tp.jpg" alt="" />
+            </div>
+            <div class="tiding-information">
+              <h3>Nhựa đựng thực phẩm loại nào an toàn, loại nào nguy hiểm</h3>
+              <p>
+                7 loại nhựa đang được lưu hành trên thị trường có thành phần và những đặc tính hóa học khác nhau. 
+              </p>
+              <a href="">Đọc tiếp </a><i class="fa-solid fa-angles-right"></i>
+            </div>
           </div>
         </div>
-        <div class="tidings-info col-3">
-          <div class="tidings-img">
-            <img src="../static/images/vd1.jpg" alt="" />
-            <div class="tidings-information">
-              <a href="">Ánh sáng thiết kế nội thất</a>
-              <p class="mt-2">08/04//2022</p>
-              <p>
-                Chúng tôi trao đến quý khách hàng chất xám là những câu chuyện
-                được truyền tải.
-              </p>
-            </div>
-            <div class="tiding-color"></div>
-          </div>
-        </div>
-        <div class="tidings-info col-3">
-          <div class="tidings-img">
-            <img src="../static/images/vd1.jpg" alt="" />
-            <div class="tidings-information">
-              <a href="">Ánh sáng thiết kế nội thất</a>
-              <p class="mt-2">08/04//2022</p>
-              <p>
-                Chúng tôi trao đến quý khách hàng chất xám là những câu chuyện
-                được truyền tải.
-              </p>
-            </div>
-            <div class="tiding-color"></div>
-          </div>
-        </div>
-        <div class="tidings-info col-3">
-          <div class="tidings-img">
-            <img src="../static/images/vd1.jpg" alt="" />
-            <div class="tidings-information">
-              <a href="">Ánh sáng thiết kế nội thất</a>
-              <p class="mt-2">08/04//2022</p>
-              <p>
-                Chúng tôi trao đến quý khách hàng chất xám là những câu chuyện
-                được truyền tải.
-              </p>
-            </div>
-            <div class="tiding-color"></div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -227,6 +210,7 @@
     </div>
   </div>
 </section>
+
 <section class="form-inf">
   <div class="container">
     <div class="row">
@@ -248,14 +232,14 @@
             />
             332013</a
           >
-          <a href="#"
+          <a href="#" class="ps-3"
             ><img
               src="{{url_for('static', filename='images/heart.png')}}"
               alt=""
             />
             71512988</a
           >
-          <a href="#"
+          <a href="#" class="ps-3"
             ><img
               src="{{url_for('static', filename='images/smile.png')}}"
               alt=""
@@ -287,7 +271,7 @@
             placeholder="Nhập nội dung..."
           ></textarea>
         </div>
-        <button class="btn btn-primary" style="margin-top: 5px; width: 100px">
+        <button class="btn-click btn">
           Gửi
         </button>
         <!-- <label id="submit" style="width: 100px;height: 30px; background: yellowgreen; text-align: center; color: white;font-size: 20px; font-weight: bold;">GỬI</label> -->
