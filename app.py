@@ -1,6 +1,7 @@
 
 from appdb import app
 
+
 # @app.route("/")
 # def home():
 #     return render_template('home/index.html')
@@ -8,6 +9,7 @@ from appdb import app
 # @app.route("/news")
 # def news():
 #     return render_template('home/news/index.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=8080)
