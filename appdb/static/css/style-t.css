@@ -97,100 +97,107 @@
 
 
 /* Destop */
-@media only screen and (min-width: 1366px){
-	.product-list{
-		flex-direction: column;
-		width: 100% !important;
-	}
-	.card-items{
-		width: 13rem !important;
-	}
-}
-@media only screen and (min-width: 1170px){
-	.card{
-		width: 25rem;
-	}
-	.product-list{
-		flex-direction: row ;
-		justify-content: space-around;
-		width: 100% !important;
-	}
-	.ul-info{
-		flex-direction: row;
-	}
-	
-
-}
-/* mobile */
-@media only screen and (min-width: 991px){
-	[class*="col-"] {
-	  width: 100%;
-	}
-	.card{
-		width: 10rem;
-	}
-	.product-list{
-		flex-direction: row;
-		justify-content: space-around;
-		width: 100% !important;
-	}
-	.ul-info{
-		flex-direction: row;
-	}
-	.address-form{
-		font-size: 19px !important ;
-	}
-}
-@media only screen and (min-width: 786px){
-	[class*="col-"] {
-	  width: 100%;
-	}
-	.card{
+@media only screen and (max-width: 1990px){
+	.card-product{
 		width: 100%;
 	}
-	.product-list{
-		flex-direction: row;
-		justify-content: space-around;
+	.card-items{
+		width: 13rem;
+	}
+	.address-form{
+		font-size: 24px;
+	}
+@media only screen and (max-width: 1366px){
+	.card-product{
+		width: 100%;
+	}
+	.card-items{
+		width: 13rem;
+	}
+	.address-form{
+		font-size: 23px;
+	}
+}
+@media only screen and (max-width: 1170px){
+	
+	.card-product{
+		flex-direction: column ;
+		width: 100%;
+	}
+	.card-items{
+		width: 11rem;
+		font-size: 14px;
 	}
 	.ul-info{
 		flex-direction: row;
 	}
-	.contact-form{
-		flex-direction: column;
-	}
 	.address-form{
-		flex-direction: column;
-		font-size: 18px;
+		font-size: 21px;
 	}
-	.sizetext{
-		font-size: 1rem !important ;
-	}
+
 }
-@media only screen and (min-width: 412px){
+/* Tablet */
+@media only screen and (max-width: 991px){
 	[class*="col-"] {
 	  width: 100%;
 	}
-	.ul-info{
-		flex-direction: row;
-	}
-	.size-form{
-		font-size: 15px;
-	}
-	.product-list{
-		flex-direction: column;
+	.card{
 		width: 100%;
 	}
 	.card-items{
 		width: 9rem;
+		font-size: 11px;
 	}
-	.contact-form{
-		flex-direction: column;
+	.ul-info{
+		flex-direction: row;
 	}
 	.address-form{
+		font-size: 19px;
+	}
+}
+@media only screen and (max-width: 786px){
+	[class*="col-"] {
+	  width: 100%;
+	}
+	.card{
+		width: 100%;
+	}
+	.product-list{
 		flex-direction: column;
+	}
+	.card-product{
+		width: 100%;
+	}
+	.card-items{
+		width: 8rem;
+		font-size: 9px;
+	}
+	.ul-info{
+		flex-direction: row;
+	}
+	.sizetext{
+		font-size: 1rem ;
+	}
+}
+/* Mobile */
+@media only screen and (max-width: 412px){
+	[class*="col-"] {
+	  width: 100%;
+	}
+	.ul-info{
+		flex-direction: row;
+	}
+	.card-product{
+		width: 100%
+	}
+	.card-items{
+		width: 9rem;
+		font-size: 15px;
+	}
+	.address-form{
 		font-size: 18px;
 	}
 	.sizetext{
-		font-size: 0.7rem;
+		font-size: 0.5rem;
 	}
 }
