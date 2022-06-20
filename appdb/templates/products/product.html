@@ -1,99 +1,71 @@
-{% extends "index.html" %} 
+{% extends "index.html" %} {% block content %}
 
-{% block content %}
-
-<main style="padding-bottom: 50px; background: #9ed6f4">
-  <div class="row shop-card-title">
-    <div class="col-3">
-      <div class="category">
-        <div class="category-top">
-          <span><strong>TÌM KIẾM</strong></span>
-          <div class="search">
-            <input id="search-into" type="text" placeholder="Tìm kiếm..." />
-            <img
-              src="{{url_for('static', filename='images/search.png')}}"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="category-list">
-          <span><strong>DANH MỤC SẢN PHẨM</strong></span>
-          <div class="menu-list">
-            <ul>
-              <li>PHÔI</li>
-              <li>CHAI</li>
-              <li>NẮP</li>
-            </ul>
-          </div>
-        </div>
-        <div class="category-news">
-          <span><strong>SẢN PHẨM HOT NHẤT</strong></span>
-          <div class="product-hot">
-            <ul>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-7">
-      <div class="shop-title">
-        <div class="row">
-          <div class="col col-all-title">
-            <span><strong>TẤT CẢ CÁC SẢN PHẨM</strong></span>
-          </div>
-          <div class="col-md-auto">
-            <p>Kiểu sản phẩm</p>
-          </div>
-          <div class="col col-lg-2">
-            <div class="dropdown show drw-show">
-              <a
-                class="btn dropdown-toggle click-dropdown"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Danh Mục Sản Phẩm
-              </a>
-
-              <div
-                class="dropdown-menu drop-list"
-                aria-labelledby="dropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Phôi</a>
-                <a class="dropdown-item" href="#">Chai</a>
-                <a class="dropdown-item" href="#">Nắp</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="shop-container">
-          <div class="row">
-            {% for a in range(6) %}
-            <div class="col">
-              <div class="card card-intr" style="width: 18rem">
-                <img
-                  class="card-img-top"
-                  src="https://gianguyenplastic.com/image/591c777363aa1f5e343d9cb4/original"
-                  alt="Card image cap"
-                />
-                <div class="card-body card-intr-submit">
-                  <h5 class="card-title">NHÓM CHAI 3</h5>
-                  <a href="#" class="btn btn-primary add-card active">
-                    Chi tiết sản phẩm</a
-                  >
+<main style="padding-bottom: 50px; background: rgb(253, 255, 255); margin-top:10rem">
+    <div class="row shop-card-title">
+        <div class="col-2 menu-left" style="background: rgb(241, 246, 250) ; ">
+            <div class="category">
+                <div class="category-top" style="margin-top:10px">
+                    <span id="text-title"><strong>TÌM KIẾM</strong></span>
+                    <div class="search">
+                        <input id="search-into" type="text" placeholder="Tìm kiếm..." />
+                        <img src="{{url_for('static', filename='images/search.png')}}" alt="" />
+                    </div>
                 </div>
-              </div>
+                <div class="category-list">
+                    <span id="text-title" style="color: black;"><strong>DANH MỤC SẢN PHẨM</strong></span>
+                    <div class="menu-list">
+                        <ul>
+                            <li>PHÔI</li>
+                            <li>CHAI</li>
+                            <li>NẮP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category-news">
+                    <span id="text-title"><strong>SẢN PHẨM HOT NHẤT</strong></span>
+                    <div class="product-hot">
+                        <ul>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            {% endfor %}
+        </div>
+        <div class="col-10" style="background:#fff ;">
+            <div class="shop-title">
+                <div class="row">
+                    <div class="col col-all-title">
+                        <span id="text-title"><strong>TẤT CẢ CÁC SẢN PHẨM</strong></span>
+                    </div>
+                    <div class="col col-lg-2" style="margin-right: 30px;">
+                        <div class="dropdown show drw-show">
+                            <a class="btn dropdown-toggle click-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danh Mục Sản Phẩm</a>
+                            <div class="dropdown-menu drop-list" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Phôi</a>
+                                <a class="dropdown-item" href="#">Chai</a>
+                                <a class="dropdown-item" href="#">Nắp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="straight" style="border-bottom: 2px solid black ;margin-right:30px"></div>
+                <div class="shop-container">
+                    <!-- <div class="row">
+                        {% for a in range(4) %}
+                        <div class="col card-col" style="justify-items: center ;">
+                            <div class="card card-intr" style="width: 18rem">
+                                <img class="card-img-top" src="https://gianguyenplastic.com/image/591c777363aa1f5e343d9cb4/original" alt="Card image cap" />
+                                <div class="card-body card-intr-submit">
+                                    <h5 class="card-title">NHÓM CHAI 3</h5>
+                                    <a href="#" class="btn btn-primary add-card active">Chi tiết sản phẩm</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
 
-            <div class="detail-product" style="display: none">
+                        <div class="detail-product" style="display: none">
               {% for i in range(6) %}
               <div class="col">
                 <div class="card card-intr" style="width: 18rem">
@@ -116,13 +88,52 @@
                 </div>
               </div>
               {% endfor%}
+            </div> 
+                    </div> -->
+
+                    <!-- <div class="container">
+                        <div class="row">
+                            {% for i in range(6) %}
+                            <div class="col-4">
+                                <div class=" cart">
+                                    <div class="card  cart-product" style="width: 18rem; margin-top: 10px;">
+                                        <img src="{{url_for('static', filename='images/Chai/chai_1.png')}}" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                    </div> -->
+                    <div class="row">
+
+                        <div class="cards">
+                            {% for i in range(4)%}
+                            <div class="cards_item">
+
+                                <div class="card">
+                                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                                    <div class="card_content">
+                                        <h2 class="card_title">Card Grid Layout</h2>
+                                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                                        <button class="btn card_btn">Read More</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="col-2"></div>
-  </div>
 </main>
 
 {% endblock %}
