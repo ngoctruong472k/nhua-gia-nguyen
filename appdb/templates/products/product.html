@@ -1,6 +1,6 @@
 {% extends "index.html" %} {% block content %}
 
-<main style="padding-bottom: 50px; background: rgb(253, 255, 255); margin-top:10rem">
+<main style="padding-bottom: 50px; background: rgb(253, 255, 255); margin-top:5rem">
     <div class="row shop-card-title">
         <div class="col-3 menu-left" style="background: rgb(241, 246, 250) ; ">
             <div class="category">
@@ -34,31 +34,37 @@
         </div>
         <div class="col-9" style="background:#fff ;">
             <div class="shop-title">
-                <div class="dropdown show drw-show">
-                    <a class="btn dropdown-toggle click-dropdown" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danh Mục Sản Phẩm</a>
-                    <div class="dropdown-menu drop-list" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Phôi</a>
-                        <a class="dropdown-item" href="#">Chai</a>
-                        <a class="dropdown-item" href="#">Nắp</a>
-                    </div>
+
+                <div class="dropdown drw-show">
+                    <button class="btn btn-secondary dropdown-toggle btn-drw" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:33%;background: rgb(197, 236, 248); color: black;">
+                        DANH MỤC SẢN PHẨM
+                    </button>
+                    <ul class="dropdown-menu drw-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item " href="#">Phôi</a></li>
+                        <li><a class="dropdown-item" href="#">Chai</a></li>
+                        <li><a class="dropdown-item" href="#">Nắp</a></li>
+                    </ul>
                 </div>
-                <div class="straight" style="border-bottom: 2px solid black ;margin-right:30px"></div>
+                <div class="straight" style="border-bottom: 3px solid rgb(176, 210, 248) ;margin-right:30px; padding-top:10px"></div>
                 <div class="shop-container">
                     <div class="row">
-
-                        <div class="cards">
+                        .
+                        <div class="cards ">
                             {% for i in range(4)%}
-                            <div class="cards_item">
+                            <div class="cards_item card-data">
 
-                                <div class="card">
+                                <div class="card ">
                                     <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
                                     <div class="card_content">
-                                        <h2 class="card_title">Card Grid Layout</h2>
-                                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid
-                                            layout</p>
-                                        <button class="btn card_btn">Liên hệ</button>
+                                        <div class="card_content_inf">
+                                            <span class="author">Thông Tin Sản Phẩm</span>
+                                            <h2 class="card_title">Phôi Chai</h2>
+                                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout
+                                            </p>
+                                            <button class="btn card_btn card_btn_inf">Liên hệ</button>
+                                        </div>
                                     </div>
+                                    -->
                                 </div>
 
                             </div>
