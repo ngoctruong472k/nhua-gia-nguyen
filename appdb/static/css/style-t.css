@@ -166,22 +166,23 @@
 		font-size: 1rem !important ;
 	}
 }
-@media only screen and (min-width: 412px){
+/* Mobile */
+@media only screen and (max-width: 412px){
 	[class*="col-"] {
 	  width: 100%;
 	}
 	.ul-info{
 		flex-direction: row;
 	}
-	.size-form{
-		font-size: 15px;
-	}
 	.product-list{
 		flex-direction: column;
-		width: 100%;
+	}
+	.card-product{
+		width: 100%
 	}
 	.card-items{
 		width: 9rem;
+		font-size: 15px;
 	}
 	.contact-form{
 		flex-direction: column;
